@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test SVG</title>
+	<script type="text/javascript" src="script/d3.min.js"></script>
+</head>
+<body>
+	<script>
+		var svg = d3.select("body").append("svg").attr("width", 1000).attr("height", 1000).attr("id", "chart");
+
+		svg.append("circle").attr("cx", 100).attr("cy", 100).attr("r", 50).attr("stroke", "#ccc").attr("stroke-width", "3px").attr("fill", "#fff")
+		svg.append("path").attr("stroke", "#ccc").attr("stroke-width", "3px").attr("fill", "#fff").attr("d", "M 100 350 q 150 -300 300 0")
+	</script>
+</body>
+</html>
